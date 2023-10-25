@@ -1,4 +1,4 @@
-package org.example.config;
+package com.microservices.demo.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,9 +8,12 @@ import java.util.List;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "twitter-kafka-microservice")
+@ConfigurationProperties(prefix = "twitter-to-kafka-service")
 public class TwitterToKafkaServiceConfigData {
 
     private List<String> twitterKeywords;
     private String welcomeMessage;
+    private String twitterV2BaseUrl;
+    private String twitterV2RulesBaseUrl;
+    private String twitterV2BearerToken;
 }

@@ -1,0 +1,27 @@
+2023-10-20 21:03:33 [main] INFO  com.microservices.demo.Main - Starting Main using Java 17.0.8 on KUBRA-FELEK with PID 27204 (C:\microservices-demo\twitter-kafka-microservice\target\classes started by kfelek in C:\microservices-demo)
+2023-10-20 21:03:33 [main] INFO  com.microservices.demo.Main - No active profile set, falling back to 1 default profile: "default"
+2023-10-20 21:03:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-20 21:03:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-20 21:03:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-20 21:03:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-20 21:03:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-20 21:03:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 795 ms
+2023-10-20 21:03:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-20 21:03:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-20 21:03:34 [main] INFO  com.microservices.demo.Main - Started Main in 1.524 seconds (JVM running for 2.24)
+2023-10-20 21:03:34 [main] INFO  o.e.c.TwitterToKafkaServiceConfigData - ***********App Start************
+2023-10-20 21:03:34 [main] INFO  o.e.c.TwitterToKafkaServiceConfigData - [Java, Microservices, Spring, Kafka, Elastic]
+2023-10-20 21:06:05 [main] INFO  com.microservices.demo.Main - Starting Main using Java 17.0.8 on KUBRA-FELEK with PID 11784 (C:\microservices-demo\twitter-kafka-microservice\target\classes started by kfelek in C:\microservices-demo)
+2023-10-20 21:06:05 [main] INFO  com.microservices.demo.Main - No active profile set, falling back to 1 default profile: "default"
+2023-10-20 21:06:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-20 21:06:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-20 21:06:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-20 21:06:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-20 21:06:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-20 21:06:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
+2023-10-20 21:06:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-20 21:06:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-20 21:06:06 [main] INFO  com.microservices.demo.Main - Started Main in 1.408 seconds (JVM running for 2.026)
+2023-10-20 21:06:06 [main] INFO  o.e.c.TwitterToKafkaServiceConfigData - ***********App Start************
+2023-10-20 21:06:06 [main] INFO  o.e.c.TwitterToKafkaServiceConfigData - [Java, Microservices, Spring, Kafka, Elastic]
+2023-10-20 21:06:06 [main] INFO  o.e.c.TwitterToKafkaServiceConfigData - Hello Kafka Microservices

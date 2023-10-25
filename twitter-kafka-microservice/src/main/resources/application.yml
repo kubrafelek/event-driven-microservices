@@ -1,4 +1,4 @@
-twitter-kafka-microservice:
+twitter-to-kafka-service:
   twitter-keywords:
     - Java
     - Microservices
@@ -6,3 +6,10 @@ twitter-kafka-microservice:
     - Kafka
     - Elastic
   welcome-message: Hello Kafka Microservices
+  enable-v2-tweets: true
+  enable-mock-tweets: false
+  twitter-v2-base-url: https://api.twitter.com/2/tweets/search/stream?tweet.fields=created_at&expansions=author_id
+  twitter-v2-rules-base-url: https://api.twitter.com/2/tweets/search/stream/rules
+  twitter-v2-bearer-token: ${TWITTER_BEARER_TOKEN}
+
+#AAAAAAAAAAAAAAAAAAAAAMx5qgEAAAAArnu0nJoBgp2upNtPJD5sk%2F8mUug%3DOAxFwmOlbHLZwLY1UOljLLOpDdBGHZrmHxQUZMjtOfOlcWij5o
