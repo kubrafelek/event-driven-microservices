@@ -1,5 +1,4 @@
 # event-driven-microservices
-Event-driven microservices architecture with patterns
 
 Event-driven architecture (EDA) architecture with Apache Kafka
 - Externalized configuration with Spring Cloud Config
