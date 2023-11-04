@@ -1,4 +1,4 @@
-# event-driven-microservices
+# Event-driven-microservices
 
 Event-driven architecture (EDA) architecture with Apache Kafka
 - Externalized configuration with Spring Cloud Config
@@ -13,3 +13,12 @@ Event-driven architecture (EDA) architecture with Apache Kafka
 - Client side load balancing with Spring Cloud Load Balancer
 - Database per Service
 - Messaging between microservices using Kafka
+
+# Running the application
+- Enter the correct credentials in twitter4j.properties file.
+- Run 'mvn install -DskipTests command
+- Then go to docker-compose folder and run docker-compose up command to run kafka cluster and twitter-to-kafka-service together
+- Check the pom.xml file and spring-boot-maven-plugin section in twitter-to-kafka-service, where we configure
+  the build-image goal to create docker image with mvn install command
+- Check the services.yml file under docker-compose folder which includes the compose definition
+  for microservice, twitter-to-kafka-service
