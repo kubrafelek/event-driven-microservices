@@ -1,29 +1,20 @@
-2023-11-01 16:16:49 [main] INFO  com.microservices.demo.Main - Starting Main using Java 17.0.8 on KUBRA-FELEK with PID 31116 (C:\microservices-demo\twitter-kafka-microservice\target\classes started by kfelek in C:\microservices-demo)
-2023-11-01 16:16:49 [main] INFO  com.microservices.demo.Main - No active profile set, falling back to 1 default profile: "default"
-2023-11-01 16:16:49 [main] INFO  com.microservices.demo.Main - Started Main in 0.764 seconds (JVM running for 1.366)
-2023-11-01 16:16:49 [main] INFO  c.m.d.c.TwitterToKafkaServiceConfigData - ***********App Start************
-2023-11-01 16:16:49 [main] INFO  c.m.d.c.TwitterToKafkaServiceConfigData - [Java, Microservices, Spring, Kafka, Elastic]
-2023-11-01 16:16:49 [main] INFO  c.m.d.c.TwitterToKafkaServiceConfigData - Hello Kafka Microservices
-2023-11-01 16:16:50 [main] INFO  c.m.d.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Spring, Kafka, Elastic]
-2023-11-01 16:16:50 [main] INFO  c.m.d.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
-2023-11-01 16:16:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-11-01 16:16:51 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+2023-11-05 14:18:57 [main] WARN  o.s.c.b.e.EnvironmentDecryptApplicationInitializer - Cannot decrypt: key=spring.cloud.config.password
+2023-11-05 14:18:57 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.cloud.config.password
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.decrypt(EnvironmentDecryptApplicationInitializer.java:292)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.lambda$decrypt$0(EnvironmentDecryptApplicationInitializer.java:270)
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.decrypt(EnvironmentDecryptApplicationInitializer.java:265)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.decrypt(EnvironmentDecryptApplicationInitializer.java:190)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:124)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:441)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.microservices.demo.Main.main(Main.java:30)
-Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 3 [character 4 line 1]
-	at org.json.JSONTokener.syntaxError(JSONTokener.java:521)
-	at org.json.JSONObject.<init>(JSONObject.java:225)
-	at org.json.JSONObject.<init>(JSONObject.java:421)
-	at com.microservices.demo.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:222)
-	at com.microservices.demo.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:87)
-	at com.microservices.demo.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:39)
-	at com.microservices.demo.Main.run(Main.java:38)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
-	... 5 common frames omitted
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration$FailsafeTextEncryptor.decrypt(EncryptionBootstrapConfiguration.java:165)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.decrypt(EnvironmentDecryptApplicationInitializer.java:277)
+	... 12 common frames omitted
